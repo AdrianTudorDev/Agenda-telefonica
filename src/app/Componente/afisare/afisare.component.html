@@ -1,0 +1,16 @@
+<div class="body">
+
+   <!-- title -->
+  <h1>Contacte
+    <span>Numar total de contacte {{nrContacts}}</span></h1>
+
+  <!-- contacte -->
+  
+    <div *ngFor="let contact of contactsTabel">
+        <h2>{{contact.name}}
+            <span>{{contact.number}}</span>
+        </h2>
+        <button (click)="deleteContact(contact.name); viewDB()">Sterge</button>   
+    </div> 
+
+</div>

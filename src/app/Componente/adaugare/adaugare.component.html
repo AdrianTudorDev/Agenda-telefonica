@@ -1,0 +1,36 @@
+<div class="head">
+    <div class="form">
+        <div class="title">Agenda telefonica</div>      
+        <div class="input-container ic1">
+          <input id="firstname" class="input" type="text" placeholder=" " 
+              #prenume />
+          <div class="cut"></div>
+          <label for="firstname" class="placeholder">Prenumele</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="lastname" class="input" type="text" placeholder=" " 
+              #nume />
+          <div class="cut cut2"></div>
+          <label for="lastname" class="placeholder">Numele</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="telephone" class="input" type="text" placeholder=" " 
+              #numar />
+          <div class="cut cut-short"></div>
+          <label for="tel" class="placeholder">Telefon</label>
+        </div>
+        <button type="text" class="submit" 
+              (click)=" createContact(prenume.value, nume.value, numar.value);
+                        prenume.value='';
+                        nume.value='';
+                        numar.value='';
+                        addContact();
+                       ">
+          Salveaza
+        </button>
+    </div>
+</div>
+    
+    
+
+    
